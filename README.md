@@ -1,4 +1,4 @@
-# Generating-Tabular-Synthetic-data-using-GANs-
+# Generating-Tabular-Synthetic-data-using-GANs
 How can we safely and efficiently share encrypted data that is also useful. We use the mechanism of GANs used to generate fake images to generate synthetic tabular data 
 
 
