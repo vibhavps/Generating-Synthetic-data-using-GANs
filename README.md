@@ -1,16 +1,9 @@
 # Generating-Tabular-Synthetic-data-using-GANs-
 How can we safely and efficiently share encrypted data that is also useful. We use the mechanism of GANs used to generate fake images to generate synthetic tabular data 
 
-echo "# Generating-Tabular-Synthetic-data-using-GANs-" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/vibhavps/Generating-Tabular-Synthetic-data-using-GANs-.git
-git push -u origin master
 
-Leveraging GANs to Generate Synthetic
-Data
-Introduction
+# Leveraging GANs to Generate Synthetic Data
+## Introduction
 Data breaches have been on the rise across the world, with major attacks in the range of
 thousands. The healthcare industry is particularly sensitive to this problem as Patient Identifiable
 Information data is highly sensitive and strictly regulated by the Health Insurance Portability and
@@ -23,9 +16,10 @@ California Consumer Protection Act of 2020, might constrain Optum to limit the w
 and store data. Current data sharing practices (to ensure de-identification) have resulted in wait
 times for data access as long as 3 months for analysts. These factors have proved to be
 hindrances for fast innovation at Optum.
-The key question to answer here is: How can we safely and efficiently share encrypted
-data that is also useful?
-Statistical Similarity
+**The key question to answer here is: How can we safely and efficiently share encrypted
+data that is also useful?**
+
+## Statistical Similarity
 The team has to make sure that the generated datasets are statistically similar to the original
 data to preserve its utility. The generated dataset should have minimal loss when compared to
 the original data. For both categorical and continuous value columns, the algorithms should be
@@ -34,13 +28,14 @@ the joint distribution of the columns. the algorithm should detect intricate rel
 columns and preserve them in the generated synthetic data working equally well on balanced as
 well as imbalanced datasets.
 We will be evaluating the datasets as follows:
-Descriptive Statistics
+### Descriptive Statistics
 Central Tendencies (Mean, Median and Mode)
 Standard Deviation
 Skewness
 Kurtosis
 Unique Values
-Principle Component Analysis
+
+#### Principle Component Analysis
 Principal Component Analysis or PCA is a linear feature extraction technique. It performs a linear
 mapping of the data to a lower-dimensional space in such a way that the variance of the data in
 the low-dimensional representation is maximized. It does so by calculating the eigenvectors from
@@ -50,7 +45,8 @@ In simpler terms, PCA combines your input features in a specific way that you ca
 important feature while still retaining the most valuable parts of all of the features. As an added
 benefit, each of the new features or components created after PCA are all independent of one
 another.
-t-Distributed Stochastic Neighbor Embedding (t-SNE)
+
+#### t-Distributed Stochastic Neighbor Embedding (t-SNE)
 t-Distributed Stochastic Neighbor Embedding (t-SNE) is a non-linear technique for dimensionality
 reduction that is particularly well suited for the visualization of high-dimensional datasets. It is
 extensively applied in image processing, NLP, genomic data and speech processing. To keep
@@ -77,7 +73,9 @@ find patterns in the data by identifying observed clusters based on similarity o
 multiple features. However, after this process, the input features are no longer identifiable, and
 you cannot make any inference based only on the output of t-SNE. Hence it is mainly a data
 exploration and visualization technique.
-PCA vs t-SNE
+
+#### PCA vs t-SNE
+
 Although both PCA and t-SNE have their own advantages and disadvantages, some key
 differences between PCA and t-SNE can be noted as follows:
 t-SNE is computationally expensive and can take several hours on million-sample datasets
