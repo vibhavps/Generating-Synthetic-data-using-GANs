@@ -8,9 +8,7 @@
 
 <div style="page-break-after: always; break-after: page;"></div>
 
-#### **Table of Contents**
 
-[TOC]
 
 <div style="page-break-after: always; break-after: page;"></div>
 
